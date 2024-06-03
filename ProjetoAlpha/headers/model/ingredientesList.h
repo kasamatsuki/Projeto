@@ -7,7 +7,7 @@
 
 #include <string>
 #include <iostream>
-#include "ingredientes.h"
+#include "ingrediente.h"
 #include <vector>
 #include <list>
 
