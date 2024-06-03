@@ -9,7 +9,7 @@
 #include <iostream>
 #include "data.h"
 #include "Preferencias.h"
-
+//teste
 
 using namespace std;
 
