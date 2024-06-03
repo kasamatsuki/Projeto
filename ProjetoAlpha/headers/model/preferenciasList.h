@@ -15,8 +15,8 @@ using namespace std;
 
 class preferenciasList{
 private:
-    vector<Preferencia> preferencias;
-    int search(const string& preferencia_comida);
+    list<Preferencia> preferencias;
+    list<Preferencia>::iterator search(const string& preferencia_comida);
 
 public:
     list<Preferencia> getAll();

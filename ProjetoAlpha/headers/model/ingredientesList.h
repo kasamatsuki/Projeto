@@ -15,8 +15,8 @@ using namespace std;
 
 class ingredientesList{
 private:
-    vector<Ingrediente> ingredientes;
-    int search(const string& nomeIngrediente);
+    list<Ingrediente> ingredientes;
+    list<Ingrediente>::iterator search(const string& nomeIngrediente);
 
 public:
     list<Ingrediente> getAll();
