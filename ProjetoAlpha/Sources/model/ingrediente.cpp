@@ -1,6 +1,6 @@
-#include "Ingredientes.h"
-#include "InvalidDataException.h" // include do InvalidDataException
 
+#include "Ingredientes.h"
+#include "InvalidDataException.h"
 
 
 // Construtor que inicializa as propriedades do ingrediente
