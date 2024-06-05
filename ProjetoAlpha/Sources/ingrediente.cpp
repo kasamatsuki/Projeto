@@ -1,6 +1,8 @@
 #include "Ingredientes.h"
 #include "InvalidDataException.h" // include do InvalidDataException
 
+
+
 // Construtor que inicializa as propriedades do ingrediente
 Ingrediente::Ingrediente(const string& nomeIngrediente, const string descricao) {
     this->nomeIngrediente = nomeIngrediente;
