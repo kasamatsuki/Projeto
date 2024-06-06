@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Project
+# Project: Projeto
 # Configurations: Debug
 # =============================================================================
 
@@ -40,6 +40,81 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/diogo/CLionProjects/ProjetoAlpha/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target Projeto
+
+
+#############################################
+# Order-only phony target for Projeto
+
+build cmake_object_order_depends_target_Projeto: phony || CMakeFiles/Projeto.dir
+
+build CMakeFiles/Projeto.dir/main.obj: CXX_COMPILER__Projeto_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/main.cpp || cmake_object_order_depends_target_Projeto
+  DEP_FILE = CMakeFiles\Projeto.dir\main.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projeto.dir
+
+build CMakeFiles/Projeto.dir/sources/model/data.obj: CXX_COMPILER__Projeto_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/data.cpp || cmake_object_order_depends_target_Projeto
+  DEP_FILE = CMakeFiles\Projeto.dir\sources\model\data.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projeto.dir\sources\model
+
+build CMakeFiles/Projeto.dir/sources/model/ingrediente.obj: CXX_COMPILER__Projeto_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/ingrediente.cpp || cmake_object_order_depends_target_Projeto
+  DEP_FILE = CMakeFiles\Projeto.dir\sources\model\ingrediente.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projeto.dir\sources\model
+
+build CMakeFiles/Projeto.dir/sources/model/ingredienteList.obj: CXX_COMPILER__Projeto_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/ingredienteList.cpp || cmake_object_order_depends_target_Projeto
+  DEP_FILE = CMakeFiles\Projeto.dir\sources\model\ingredienteList.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projeto.dir\sources\model
+
+build CMakeFiles/Projeto.dir/sources/model/preferencias.obj: CXX_COMPILER__Projeto_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/preferencias.cpp || cmake_object_order_depends_target_Projeto
+  DEP_FILE = CMakeFiles\Projeto.dir\sources\model\preferencias.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projeto.dir\sources\model
+
+build CMakeFiles/Projeto.dir/sources/model/receita.obj: CXX_COMPILER__Projeto_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/receita.cpp || cmake_object_order_depends_target_Projeto
+  DEP_FILE = CMakeFiles\Projeto.dir\sources\model\receita.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projeto.dir\sources\model
+
+build CMakeFiles/Projeto.dir/sources/model/Utils.obj: CXX_COMPILER__Projeto_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/Utils.cpp || cmake_object_order_depends_target_Projeto
+  DEP_FILE = CMakeFiles\Projeto.dir\sources\model\Utils.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projeto.dir\sources\model
+
+build CMakeFiles/Projeto.dir/sources/model/Views.obj: CXX_COMPILER__Projeto_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/Views.cpp || cmake_object_order_depends_target_Projeto
+  DEP_FILE = CMakeFiles\Projeto.dir\sources\model\Views.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  OBJECT_FILE_DIR = CMakeFiles\Projeto.dir\sources\model
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Projeto
+
+
+#############################################
+# Link the executable Projeto.exe
+
+build Projeto.exe: CXX_EXECUTABLE_LINKER__Projeto_Debug CMakeFiles/Projeto.dir/main.obj CMakeFiles/Projeto.dir/sources/model/data.obj CMakeFiles/Projeto.dir/sources/model/ingrediente.obj CMakeFiles/Projeto.dir/sources/model/ingredienteList.obj CMakeFiles/Projeto.dir/sources/model/preferencias.obj CMakeFiles/Projeto.dir/sources/model/receita.obj CMakeFiles/Projeto.dir/sources/model/Utils.obj CMakeFiles/Projeto.dir/sources/model/Views.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Projeto.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Projeto.exe
+  TARGET_IMPLIB = libProjeto.dll.a
+  TARGET_PDB = Projeto.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -66,6 +141,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Projeto: phony Projeto.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -74,7 +151,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: C:/Users/diogo/CLionProjects/ProjetoAlpha/cmake-build-debug
 
-build all: phony
+build all: phony Projeto.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.
