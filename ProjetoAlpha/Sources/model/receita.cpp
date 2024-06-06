@@ -1,5 +1,5 @@
-#include "receita.h"
 #include "InvalidDataException.h"
+#include "receita.h"
 
 
 // Construtor que inicializa os membros da classe
