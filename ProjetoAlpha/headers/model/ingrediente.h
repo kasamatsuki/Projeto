@@ -25,7 +25,7 @@ public:
     void setNomeIngrediente(const string &nomeIngrediente);
     //
     const string& getDescricao() const;
-    void setDescricao( string &descricao);
+    void setDescricao(const string &descricao);
 
     bool operator == (const Ingrediente& obj) const;
     bool operator == (int nr) const;

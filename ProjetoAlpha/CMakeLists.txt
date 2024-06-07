@@ -13,5 +13,7 @@ include_directories(${CMAKE_SOURCE_DIR}/headers/model ${CMAKE_SOURCE_DIR}/header
 add_executable(my_project
         main.cpp
         sources/model/data.cpp
+        sources/model/ingredienteList.cpp
+        sources/model/ingrediente.cpp
 
 )
