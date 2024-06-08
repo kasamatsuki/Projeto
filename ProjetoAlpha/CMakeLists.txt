@@ -18,5 +18,6 @@ add_executable(my_project
         sources/model/preferencias.cpp
         sources/model/receita.cpp
         sources/model/ingredientesStock.cpp
+        sources/model/ingredienteStockList.cpp
 
 )
