@@ -48,3 +48,4 @@ bool Ingrediente::operator == (const Ingrediente& obj) const {
 bool Ingrediente::operator == (int nr) const {
     return false;
 }
+

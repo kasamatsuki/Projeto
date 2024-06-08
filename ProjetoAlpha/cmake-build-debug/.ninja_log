@@ -1,0 +1,5 @@
+# ninja log v6
+2	295	7394114758107099	CMakeFiles/Projeto.dir/main.obj	ffa69afad48b3fdf
+15	345	7394114758246168	CMakeFiles/Projeto.dir/sources/model/ingredienteList.obj	1585eea518fc4cf6
+3	389	7394206540234337	CMakeFiles/my_project.dir/main.cpp.obj	c72e772af622067b
+18	457	7394781935998697	CMakeFiles/my_project.dir/sources/model/ingredienteList.cpp.obj	fa6fc90667abcb0
