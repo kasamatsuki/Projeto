@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Project
+# Project: my_project
 # Configurations: Debug
 # =============================================================================
 
@@ -40,6 +40,89 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/diogo/CLionProjects/ProjetoAlpha/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target my_project
+
+
+#############################################
+# Order-only phony target for my_project
+
+build cmake_object_order_depends_target_my_project: phony || CMakeFiles/my_project.dir
+
+build CMakeFiles/my_project.dir/main.cpp.obj: CXX_COMPILER__my_project_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/main.cpp || cmake_object_order_depends_target_my_project
+  DEP_FILE = CMakeFiles\my_project.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/model -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/exceptions -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/views
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_project.dir
+
+build CMakeFiles/my_project.dir/sources/model/data.cpp.obj: CXX_COMPILER__my_project_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/data.cpp || cmake_object_order_depends_target_my_project
+  DEP_FILE = CMakeFiles\my_project.dir\sources\model\data.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/model -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/exceptions -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/views
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_project.dir\sources\model
+
+build CMakeFiles/my_project.dir/sources/model/ingredienteList.cpp.obj: CXX_COMPILER__my_project_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/ingredienteList.cpp || cmake_object_order_depends_target_my_project
+  DEP_FILE = CMakeFiles\my_project.dir\sources\model\ingredienteList.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/model -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/exceptions -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/views
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_project.dir\sources\model
+
+build CMakeFiles/my_project.dir/sources/model/ingrediente.cpp.obj: CXX_COMPILER__my_project_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/ingrediente.cpp || cmake_object_order_depends_target_my_project
+  DEP_FILE = CMakeFiles\my_project.dir\sources\model\ingrediente.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/model -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/exceptions -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/views
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_project.dir\sources\model
+
+build CMakeFiles/my_project.dir/sources/model/preferencias.cpp.obj: CXX_COMPILER__my_project_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/preferencias.cpp || cmake_object_order_depends_target_my_project
+  DEP_FILE = CMakeFiles\my_project.dir\sources\model\preferencias.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/model -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/exceptions -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/views
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_project.dir\sources\model
+
+build CMakeFiles/my_project.dir/sources/model/receita.cpp.obj: CXX_COMPILER__my_project_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/receita.cpp || cmake_object_order_depends_target_my_project
+  DEP_FILE = CMakeFiles\my_project.dir\sources\model\receita.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/model -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/exceptions -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/views
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_project.dir\sources\model
+
+build CMakeFiles/my_project.dir/sources/model/ingredientesStock.cpp.obj: CXX_COMPILER__my_project_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/ingredientesStock.cpp || cmake_object_order_depends_target_my_project
+  DEP_FILE = CMakeFiles\my_project.dir\sources\model\ingredientesStock.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/model -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/exceptions -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/views
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_project.dir\sources\model
+
+build CMakeFiles/my_project.dir/sources/model/ingredienteStockList.cpp.obj: CXX_COMPILER__my_project_unscanned_Debug C$:/Users/diogo/CLionProjects/ProjetoAlpha/sources/model/ingredienteStockList.cpp || cmake_object_order_depends_target_my_project
+  DEP_FILE = CMakeFiles\my_project.dir\sources\model\ingredienteStockList.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/model -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/exceptions -IC:/Users/diogo/CLionProjects/ProjetoAlpha/headers/views
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\my_project.dir\sources\model
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target my_project
+
+
+#############################################
+# Link the executable my_project.exe
+
+build my_project.exe: CXX_EXECUTABLE_LINKER__my_project_Debug CMakeFiles/my_project.dir/main.cpp.obj CMakeFiles/my_project.dir/sources/model/data.cpp.obj CMakeFiles/my_project.dir/sources/model/ingredienteList.cpp.obj CMakeFiles/my_project.dir/sources/model/ingrediente.cpp.obj CMakeFiles/my_project.dir/sources/model/preferencias.cpp.obj CMakeFiles/my_project.dir/sources/model/receita.cpp.obj CMakeFiles/my_project.dir/sources/model/ingredientesStock.cpp.obj CMakeFiles/my_project.dir/sources/model/ingredienteStockList.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\my_project.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = my_project.exe
+  TARGET_IMPLIB = libmy_project.dll.a
+  TARGET_PDB = my_project.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -66,6 +149,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build my_project: phony my_project.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -74,12 +159,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: C:/Users/diogo/CLionProjects/ProjetoAlpha/cmake-build-debug
 
-build all: phony
-
-# =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+build all: phony my_project.exe
 
 # =============================================================================
 # Built-in targets

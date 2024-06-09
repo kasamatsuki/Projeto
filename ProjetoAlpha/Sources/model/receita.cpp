@@ -1,5 +1,6 @@
-#include "receita.h"
 #include "InvalidDataException.h"
+#include "receita.h"
+
 
 // Construtor que inicializa os membros da classe
 Receita::Receita(const string& nomeReceita, const string& descricao, const list<Ingrediente>& ingredientes_receita) {
