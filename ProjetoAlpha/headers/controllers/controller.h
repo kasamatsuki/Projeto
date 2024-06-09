@@ -6,15 +6,31 @@
 #define TRABALHO_DE_FSOFT_CONTROLLER_H
 #include "Views.h"
 #include "registoView.h"
+#include "favoritosList.h"
+#include "ingredientesList.h"
+#include "IngredientesStockList.h"
+#include "preferenciasList.h"
+#include "ReceitaList.h"
 #include "utils.h"
-//mais includes(resto do header/views)
 
 class Controller{
 
 private:
     registoView RegistoView;
     View view;
-    //resto dos views
+    favoritosList favList;
+    ingredientesList ingrList;
+    IngredientesStockList ingrStockList;
+    preferenciasList prefList;
+    ReceitaList recList;
+
+
+    void runFavoritos();
+    void runIngredientes();
+    void runIngredientesStock();
+    void runPreferencias();
+    void runReceitas();
+
 
 
 public:
