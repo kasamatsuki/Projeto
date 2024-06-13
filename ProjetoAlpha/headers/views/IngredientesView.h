@@ -7,9 +7,9 @@
 #define HEADERS_VIEWS_INGREDIENTESVIEW_H_
 
 #include <list>
-#include "in"
+#include "ingrediente.h"
 
-    Class IngredientesViews {public:
+    Class IngredientesView {public:
     Ingrediente getIngrediente(const std::list<Ingrediente>& ingredientes, const std::string& nome);
     void printIngrediente(const Ingrediente& ingrediente);
     void printIngredientes(const std::list<Ingrediente>& ingredientes);

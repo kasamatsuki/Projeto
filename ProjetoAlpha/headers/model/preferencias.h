@@ -5,7 +5,6 @@
 #ifndef PROJETOALPHA_PREFERENCIAS_H
 #define PROJETOALPHA_PREFERENCIAS_H
 
-
 #include <string>
 #include <iostream>
 
