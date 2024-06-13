@@ -3,7 +3,7 @@
 //
 #include "InvalidDataException.h"
 #include <string>
-#include "Data.h"
+#include "data.h"
 
 using namespace std;
 
@@ -64,9 +64,9 @@ Date::Date(int day, int month, int year){
 Date::Date(const Date& date){
     setDate(date.day, date.month, date.year);
 }
-void Date::setDate(int day, int month, int year){
+void Data::setDate(int day, int month, int year){
     if(isValid(day, month, year)){
-        this->day = day;
+        this->dia = d;
         this->month = month;
         this->year = year;
     }

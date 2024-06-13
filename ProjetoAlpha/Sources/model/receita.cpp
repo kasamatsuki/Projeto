@@ -1,17 +1,27 @@
+/*
+ * Receita.cpp
+ *
+ *  Created on: 03/06/2024
+ *      Author: diogo
+ */
+
 #include "receita.h"
 #include "InvalidDataException.h"
 
-// Construtor que inicializa os membros da classe
+
+// Construtor
 Receita::Receita(const string& nomeReceita, const string& descricao, const list<Ingrediente>& ingredientes_receita) {
-    this->nomeReceita = nomeReceita;
+    setNomeReceita(nomeReceita);
     this->descricao = descricao;
     this->ingredientes_receita = ingredientes_receita;
+    this->fav = false;
 }
 
 // Construtor de cópia
 Receita::Receita(const Receita& obj) {
-    this->nomeReceita = obj.nomeReceita;
+    setNomeReceita(obj.nomeReceita);
     this->descricao = obj.descricao;
+    this->fav = obj.fav;
     this->ingredientes_receita = obj.ingredientes_receita;
 }
 
@@ -19,55 +29,55 @@ Receita::Receita(const Receita& obj) {
 Receita::~Receita() {
 }
 
-// Getter para o nome da receita
+// Getters
 string Receita::getNomeReceita() const {
     return nomeReceita;
 }
 
-// Getter para a descrição da receita
 string Receita::getDescricao() const {
     return descricao;
 }
 
-// Getter para a lista de ingredientes da receita
+bool Receita::isFav() const {
+    return fav;
+}
+
 list<Ingrediente> Receita::getIngredientes() const {
     return ingredientes_receita;
 }
 
-// Setter para o nome da receita
+// Setters
 void Receita::setNomeReceita(const string& nomeReceita) {
-    this->nomeReceita = nomeReceita;
+        this->nomeReceita = nomeReceita;
 }
 
-// Setter para a descrição da receita
 void Receita::setDescricao(const string& descricao) {
     this->descricao = descricao;
 }
 
-// Setter para a lista de ingredientes da receita
+void Receita::setFav(bool fav) {
+    this->fav = fav;
+}
+
 void Receita::setIngredientes(const list<Ingrediente>& ingredientes_receita) {
     this->ingredientes_receita = ingredientes_receita;
 }
 
-// Adicionar um ingrediente à lista de ingredientes da receita
+// Adicionar um ingrediente
 void Receita::addIngrediente(const Ingrediente& ingrediente) {
     ingredientes_receita.push_back(ingrediente);
 }
 
-// Remover um ingrediente da lista de ingredientes da receita
+// Remover um ingrediente
 void Receita::removeIngrediente(const Ingrediente& ingrediente) {
     ingredientes_receita.remove(ingrediente);
 }
 
-// Operador de igualdade para comparar duas receitas
-bool Receita::operator == (const Receita& obj) const {
-    return this->nomeReceita == obj.nomeReceita &&
-           this->descricao == obj.descricao &&
-           this->ingredientes_receita == obj.ingredientes_receita;
+// Operadores de igualdade
+bool Receita::operator==(const Receita& obj) const {
+    return this->nomeReceita == obj.nomeReceita;
 }
 
-// Operador de igualdade para comparar a receita com um nome de receita
-bool Receita::operator == (const string& nomeReceita) const {
-    return this->nomeReceita == nomeReceita;
+bool Receita::operator==(const string& str) const {
+    return this->nomeReceita == str;
 }
-

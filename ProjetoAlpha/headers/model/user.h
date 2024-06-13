@@ -18,6 +18,7 @@ protected:
     string nome;
     string email;
     string password;
+    string role;
     static int num_users;
     int num;
     Data nasc;

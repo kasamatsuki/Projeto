@@ -1,5 +1,7 @@
-#include "Ingredientes.h"
-#include "InvalidDataException.h" // include do InvalidDataException
+
+#include "ingrediente.h"
+#include "InvalidDataException.h"
+
 
 // Construtor que inicializa as propriedades do ingrediente
 Ingrediente::Ingrediente(const string& nomeIngrediente, const string descricao) {
@@ -46,3 +48,4 @@ bool Ingrediente::operator == (const Ingrediente& obj) const {
 bool Ingrediente::operator == (int nr) const {
     return false;
 }
+

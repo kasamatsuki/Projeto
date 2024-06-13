@@ -1,6 +1,5 @@
-#include "Preferencias.h"
-#include "InvalidDataException.h" // include do InvalidDataException
-
+#include "InvalidDataException.h"
+#include "preferencias.h"
 
 Preferencia::Preferencia(string preferencia_comida) {
     this->preferencia_comida = preferencia_comida;
