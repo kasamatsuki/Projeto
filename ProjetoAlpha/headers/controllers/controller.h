@@ -4,17 +4,18 @@
 
 #ifndef TRABALHO_DE_FSOFT_CONTROLLER_H
 #define TRABALHO_DE_FSOFT_CONTROLLER_H
+
 #include "Views.h"
 #include "registoView.h"
 #include "favoritosList.h"
 #include "ingredientesList.h"
-#include "IngredientesStockList.h"
+#include "ingredientesStockList.h"
 #include "preferenciasList.h"
-#include "ReceitaList.h"
+#include "receitaList.h"
 #include "utils.h"
+#include "FoodFinder.h"
 
-class Controller{
-
+class Controller {
 private:
     registoView RegistoView;
     View view;
@@ -23,18 +24,18 @@ private:
     IngredientesStockList ingrStockList;
     preferenciasList prefList;
     ReceitaList recList;
+    FoodFinder app;
 
-
+    void runUsers();
     void runFavoritos();
     void runIngredientes();
     void runIngredientesStock();
     void runPreferencias();
     void runReceitas();
 
-
-
 public:
-    //Falta criar a App.h que será onde tem os containers todos Controller(App& app);
+    Controller(FoodFinder& app);
     void run();
 };
+
 #endif //TRABALHO_DE_FSOFT_CONTROLLER_H
