@@ -17,7 +17,7 @@ Controller::Controller(FoodFinder& app) {
 void Controller::run() {
     int op = -1;
     do {
-        op = this->view.menu();
+        op = this->view.menuPrincipal();
         switch(op) {
             case 1: runUsers();
                 break;
@@ -40,7 +40,7 @@ void Controller::run() {
 void Controller::runUsers() {
     int op = -1;
     do {
-        op = this->view.menuUsers();
+        op = this->view.menuUser();
         switch(op) {
             case 1: {
                 User user = this->RegistoView.getUser();
@@ -71,7 +71,7 @@ void Controller::runUsers() {
 void Controller::runReceitas() {
     int op = -1;
     do {
-        op = this->view.menuRecipes();
+        op = this->view.pesquisaReceitas();
         switch(op) {
             case 1: {
                 Recipe recipe = this->recList.getRecipe();
@@ -102,7 +102,7 @@ void Controller::runReceitas() {
 void Controller::runIngredientes() {
     int op = -1;
     do {
-        op = this->view.menuIngredients();
+        op = this->view.ingredientesUser();
         switch(op) {
             case 1: {
                 Ingredient ingredient = this->ingrList.getIngredient();
@@ -164,7 +164,7 @@ void Controller::runIngredientesStock() {
 void Controller::runFavoritos() {
     int op = -1;
     do {
-        op = this->view.menuFavoritos();
+        op = this->view.receitasFavoritas();
         switch(op) {
             case 1: {
                 Recipe recipe = this->favList.getRecipe();
@@ -195,28 +195,4 @@ void Controller::runFavoritos() {
 void Controller::runPreferencias() {
     int op = -1;
     do {
-        op = this->view.menuPreferencias();
-        switch(op) {
-            case 1: {
-                Preferencias prefs = this->prefList.getPreferencias();
-                this->app.setPreferencias(prefs);
-            }
-                break;
-            case 2: {
-                Preferencias* prefs = this->app.getPreferencias();
-                if(prefs != NULL) {
-                    this->prefList.printPreferencias(prefs);
-                } else {
-                    cout << "As preferencias nao foram encontradas." << endl;
-                }
-            }
-                break;
-            case 3: {
-                this->app.clearPreferencias();
-            }
-                break;
-            default:
-                break;
-        }
-    } while(op != 0);
-}
+        op = this->view.h
