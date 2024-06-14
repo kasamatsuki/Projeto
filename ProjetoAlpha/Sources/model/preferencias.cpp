@@ -28,3 +28,4 @@ bool Preferencia::operator == (const Preferencia& obj) const {
 bool Preferencia::operator == (const string& str) const {
     return this->preferencia_comida == str;
 }
+
