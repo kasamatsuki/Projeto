@@ -19,6 +19,9 @@ private:
 public:
     Preferencia(string preferencia_comida);
     Preferencia(const Preferencia& obj);
+
+    Preferencia();
+
     ~Preferencia();
 
     const string& getPreferencia_comida() const;

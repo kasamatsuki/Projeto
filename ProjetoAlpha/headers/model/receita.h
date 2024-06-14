@@ -1,51 +1,42 @@
-#ifndef PROJETOALPHA_RECEITA_H
-#define PROJETOALPHA_RECEITA_H
+#ifndef RECEITA_H
+#define RECEITA_H
 
 #include <string>
 #include <list>
+#include "preferencias.h"
 #include "ingrediente.h"
-
-using namespace std;
 
 class Receita {
 private:
-    string nomeReceita;
-    string descricao;
+    std::string nomeReceita;
+    std::string descricao;
     bool fav;
-    list<Ingrediente> ingredientes_receita;
-
+    std::list<Ingrediente> ingredientes_receita;
+    Preferencia preferencia_restricao;
 
 public:
-    // Construtor
-    Receita(const string& nomeReceita, const string& descricao, const list<Ingrediente>& ingredientes_receita);
+    Receita(const std::string& nomeReceita, const std::string& descricao, const std::list<Ingrediente>& ingredientes_receita, const Preferencia& preferencia_restricao);
+    Receita(const Receita& obj); // Construtor de cópia
 
-    // Construtor de cópia
-    Receita(const Receita& obj);
-
-    // Destrutor
     ~Receita();
 
-    // Getters
-    string getNomeReceita() const;
-    string getDescricao() const;
+    std::string getNomeReceita() const;
+    std::string getDescricao() const;
     bool isFav() const;
-    list<Ingrediente> getIngredientes() const;
+    std::list<Ingrediente> getIngredientes() const;
+    Preferencia getPreferencia_restricao() const;
 
-    // Setters
-    void setNomeReceita(const string& nomeReceita);
-    void setDescricao(const string& descricao);
+    void setNomeReceita(const std::string& nomeReceita);
+    void setDescricao(const std::string& descricao);
     void setFav(bool fav);
-    void setIngredientes(const list<Ingrediente>& ingredientes_receita);
+    void setIngredientes(const std::list<Ingrediente>& ingredientes_receita);
+    void setPreferencia_restricao(const Preferencia& preferencia_restricao);
 
-    // Adicionar um ingrediente
     void addIngrediente(const Ingrediente& ingrediente);
-
-    // Remover um ingrediente
     void removeIngrediente(const Ingrediente& ingrediente);
 
-    // Operadores de igualdade
     bool operator==(const Receita& obj) const;
-    bool operator==(const string& str) const;
+    bool operator==(const std::string& str) const;
 };
 
-#endif //PROJETOALPHA_RECEITA_H
+#endif // RECEITA_H
