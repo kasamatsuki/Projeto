@@ -2,7 +2,7 @@
 
 // Construtor
 Receita::Receita(const std::string& nomeReceita, const std::string& descricao, const std::list<Ingrediente>& ingredientes_receita, const Preferencia& preferencia_restricao) {
-    setNomeReceita(nomeReceita);
+    this->nomeReceita = nomeReceita;
     this->descricao = descricao;
     this->ingredientes_receita = ingredientes_receita;
     this->fav = false;
@@ -11,7 +11,7 @@ Receita::Receita(const std::string& nomeReceita, const std::string& descricao, c
 
 // Construtor de cópia
 Receita::Receita(const Receita& obj) {
-    setNomeReceita(obj.nomeReceita);
+    this->nomeReceita = obj.nomeReceita;
     this->descricao = obj.descricao;
     this->fav = obj.fav;
     this->ingredientes_receita = obj.ingredientes_receita;

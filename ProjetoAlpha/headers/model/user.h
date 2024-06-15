@@ -1,19 +1,13 @@
-//
-// Created by diogo on 02/06/2024.
-//
-
 #ifndef PROJETOALPHA_USER_H
 #define PROJETOALPHA_USER_H
 
 #include <string>
-#include <iostream>
 #include "data.h"
-#include "Preferencias.h"
-
+#include "receitaList.h"
 
 using namespace std;
 
-class User{
+class User {
 protected:
     string nome;
     string email;
@@ -22,30 +16,35 @@ protected:
     static int num_users;
     int num;
     Data nasc;
+    ReceitaList receitas;
 
 public:
-    User(const string& nome, const Data& nasc);
+    // Construtor que recebe todos os parâmetros necessários
+    User( int& num,const string& nome, const string& email, const string& password, const string& role, const Data& nasc);
+
     User(const User& user);
     ~User();
+
     const string& getName() const;
-    void setName(const string &name);
-    //
+    void setName(const string& name);
+
     string& getEmail();
-    void setEmail(string &email);
-    //
+    void setEmail(const string& email);
+
     string& getPassword();
-    void setPassword( string &password);
-    //
+    void setPassword(const string& password);
+
     const Data& getBirthday() const;
-    void setBirthday(const Data &birthday);
-    //
-    int getNumber() const ;
+    void setBirthday(const Data& birthday);
+
+    int getNumber() const;
     void setNumber(int num);
 
-    bool operator == (const User& obj) const;
-    bool operator == (int nr) const;
+    ReceitaList getReceitas() const;
+    void setReceitas(const ReceitaList& receitas);
 
+    bool operator==(const User& obj) const;
+    bool operator==(int nr) const;
 };
 
-
-#endif //PROJETOALPHA_USER_H
+#endif // PROJETOALPHA_USER_H
