@@ -5,15 +5,21 @@
 // Copyright   : Your copyright notice
 //============================================================================
 
-#include <iostream>
-//Incluir um header que contenha todas a maioria dos containers #include "App.h>
-
-
-using namespace std;
+#include "MockData.h"
 
 
 int main() {
-   // App app("FoodFinder")
-    cout << "Application has exited" << endl;
+    FoodFinder app;
+    app.setUsers(MockData::getUsers());
+    app.setReceitas(MockData::getReceitas());
+    app.setIngredientes(MockData::getIngredientes());
+    app.setIngredientesStock(MockData::getIngredientesStock());
+    app.setReceitasFavoritas(MockData::getReceitasFavoritas());
+    app.setPreferencias(MockData::getPreferencias());
+
+    Controller controller(app);
+    controller.run();
+
     return 0;
 }
+
