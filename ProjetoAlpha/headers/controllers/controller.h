@@ -6,14 +6,13 @@
 #define TRABALHO_DE_FSOFT_CONTROLLER_H
 
 #include "../../headers/views/View.h"
-#include "registoView.h"
-#include "favoritosList.h"
-#include "ingredientesList.h"
+#include "../../headers/views/registoView.h"
+#include "../../headers/model/favoritosList.h"
+#include "../../headers/model/ingredientesList.h"
 #include "../../headers/model/ingredienteStockList.h"
-#include "preferenciasList.h"
-#include "receitaList.h"
-#include "utils.h"
-#include "FoodFinder.h"
+#include "../../headers/model/preferenciasList.h"
+#include "../../headers/model/receita.h"
+#include "../../headers/views/utils.h"
 
 class Controller {
 private:

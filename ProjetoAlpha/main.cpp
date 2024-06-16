@@ -9,7 +9,6 @@
 
 
 int main() {
-    FoodFinder app;
     app.setUsers(MockData::getusers());
     app.setReceitas(MockData::getReceitas());
     app.setIngredientes(MockData::getIngredientes());

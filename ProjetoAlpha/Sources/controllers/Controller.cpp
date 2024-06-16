@@ -1,17 +1,12 @@
 #include <iostream>
 #include <string>
 #include "../../headers/controllers/controller.h"
-#include "Utils.h"
-#include "DataConsistencyException.h"
-#include "User.h"
+#include "../../headers/views/utils.h"
+#include "../../headers/exceptions/DataConsistencyException.h"
+#include "../../headers/model/User.h"
 #include "../../headers/model/receita.h"
 #include "../../headers/model/ingrediente.h"
-#include "FoodFinder.h"
 using namespace std;
-
-Controller::Controller(FoodFinder& app) {
-    this->app = app;
-}
 
 void Controller::run() {
     int op = -1;
