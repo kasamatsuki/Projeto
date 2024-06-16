@@ -2,22 +2,18 @@
 // Created by vasco on 16/06/2024.
 //
 #include "MockData.h"
-#include "user.h"
-#include "receita.h"
-#include "ingrediente.h"
-#include "preferencias.h"
 
-std::vector<user> MockData::getUsers() {
-    std::vector<user> users;
-    users.push_back(user("joao_silva", "João Silva", "joao@example.com"));
-    users.push_back(user("maria_oliveira", "Maria Oliveira", "maria@example.com"));
+std::vector<User> MockData::getusers() {
+    std::vector<User> users;
+    users.push_back(User(1,"João Silva", "joao@example.com", "vasco123"));
+    users.push_back(User(2,"Maria Oliveira", "maria@example.com", "vasco123"));
     return users;
 }
 
 std::vector<receita> MockData::getReceitas() {
     std::vector<receita> receitas;
     receitas.push_back(receita("Pasta Carbonara", "Deliciosa pasta italiana com molho cremoso", 4.5));
-    receitas.push_back(receita("Frango ao Curry", "Frango ao curry picante e saboroso", 4.7));
+    receitas.push_back(receita("Frango ao Curry", "Frango al curry picante e saboroso", 4.7));
     return receitas;
 }
 

@@ -8,14 +8,14 @@
 #define MOCKDATA_H
 
 #include <vector>
-#include "user.h"
-#include "receita.h"
-#include "ingrediente.h"
-#include "preferencias.h"
+#include "../headers/model/user.h"
+#include "../headers/model/receita.h"
+#include "../headers/model/ingrediente.h"
+#include "../headers/model/preferencias.h"
 
 class MockData {
 public:
-    static std::vector<user> getusers();
+    static std::vector<User> getusers();
     static std::vector<receita> getrecitas();
     static std::vector<ingrediente> getingredients();
     static std::vector<ingredientesStock> getIngredientsStock();

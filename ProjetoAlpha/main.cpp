@@ -5,7 +5,7 @@
 // Copyright   : Your copyright notice
 //============================================================================
 
-#include "MockData.h"
+#include "Mocks/MockData.h"
 
 
 int main() {

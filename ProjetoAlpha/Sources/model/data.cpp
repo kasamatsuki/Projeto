@@ -3,40 +3,40 @@
 //
 #include "InvalidDataException.h"
 #include <string>
-#include "data.h"
+#include "../../headers/model/data.h"
 
 using namespace std;
 
-bool Date:: isLeapYear(int year){
-    // If a year is multiple of 400,
-    // then it is a leap year
-    if (year % 400 == 0)
+bool Data::isLeapYear(int ano){
+    // If a ano is multiple of 400,
+    // then it is a leap ano
+    if (ano % 400 == 0)
         return true;
-    // Else If a year is multiple of 100,
-    // then it is not a leap year
-    if (year % 100 == 0)
+    // Else If a ano is multiple of 100,
+    // then it is not a leap ano
+    if (ano % 100 == 0)
         return false;
-    // Else If a year is multiple of 4,
-    // then it is a leap year
-    if (year % 4 == 0)
+    // Else If a ano is multiple of 4,
+    // then it is a leap ano
+    if (ano % 4 == 0)
         return true;
     return false;
 
 
 }
-bool Date::isValid(int day, int month, int year){
+bool Data::isValid(int dia, int mes, int ano){
     bool result = true;
-    if(day <= 0 || day > 31 || month <= 0 || month > 12){
+    if(dia <= 0 || dia > 31 || mes <= 0 || mes > 12){
         result = false;
     }else{
-        switch(month){
+        switch(mes){
             case 2:
-                if(isLeapYear(year) == true){
-                    if(day > 29){
+                if(isLeapYear(ano) == true){
+                    if(dia > 29){
                         result = false;
                     }
                 }else{
-                    if(day > 28){
+                    if(dia > 28){
                         result = false;
                     }
                 }
@@ -45,7 +45,7 @@ bool Date::isValid(int day, int month, int year){
             case 6:
             case 9:
             case 11:
-                if(day > 30){
+                if(dia > 30){
                     result = false;
                 }
                 break;
@@ -54,51 +54,51 @@ bool Date::isValid(int day, int month, int year){
     return result;
 
 }
-Date::Date(){
-    //default date
+Data::Data(){
+    //default Data
     setDate(1,1, 1900);
 }
-Date::Date(int day, int month, int year){
-    setDate(day,month, year);
+Data::Data(int dia, int mes, int ano){
+    setDate(dia, mes, ano);
 }
-Date::Date(const Date& date){
-    setDate(date.day, date.month, date.year);
+Data::Data(const Data& Data){
+    setDate(Data.dia, Data.mes, Data.ano);
 }
-void Data::setDate(int day, int month, int year){
-    if(isValid(day, month, year)){
-        this->dia = d;
-        this->month = month;
-        this->year = year;
+void Data::setDate(int dia, int mes, int ano){
+    if(isValid(dia, mes, ano)){
+        this->dia = dia;
+        this->mes = mes;
+        this->ano = ano;
     }
     else{
-        string msg =to_string(day)+ "/"+to_string(month)+"/"+to_string(year);
+        string msg =to_string(dia)+ "/"+to_string(mes)+"/"+to_string(ano);
         throw InvalidDataException(msg);
     }
 }
-void Date::getDate(int& day, int& month, int& year) const{
-    day = this->day;
-    month = this->month;
-    year = this->year;
+void Data::getDate(int& dia, int& mes, int& ano) const{
+    dia = this->dia;
+    mes = this->mes;
+    ano = this->ano;
 }
-bool Date::operator == (const Date& obj) const{
-    if(this->day == obj.day && this->month == obj.month && this->year == obj.year){
+bool Data::operator == (const Data& obj) const{
+    if(this->dia == obj.dia && this->mes == obj.mes && this->ano == obj.ano){
         return true;
     }
     return false;
 }
-bool Date::operator > (const Date& obj)const{
-    if(this->year > obj.year){
+bool Data::operator > (const Data& obj)const{
+    if(this->ano > obj.ano){
         return true;
     }
-    if(this->month > obj.month){
+    if(this->mes > obj.mes){
         return true;
     }
-    if(this->day > obj.day){
+    if(this->dia > obj.dia){
         return true;
     }
     return false;
 }
-bool Date::operator < (const Date& obj) const{
+bool Data::operator < (const Data& obj) const{
     if(*this == obj){
         return false;
     }
@@ -108,5 +108,3 @@ bool Date::operator < (const Date& obj) const{
     }
     return true;
 }
-
-
