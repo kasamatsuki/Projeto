@@ -26,7 +26,7 @@ public:
     const string& getName() const;
     void setName(const string& name);
 
-    string& getEmail();
+    const string & getEmail();
     void setEmail(const string& email);
 
     string& getPassword();

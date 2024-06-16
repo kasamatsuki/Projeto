@@ -21,5 +21,6 @@ add_executable(my_project
         sources/model/ingredienteStockList.cpp
         sources/model/receitasList.cpp
         sources/model/user.cpp
-
+        Sources/views/registoview.cpp
+        Mocks/Mockdata.cpp
 )

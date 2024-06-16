@@ -5,11 +5,11 @@
 #ifndef TRABALHO_DE_FSOFT_CONTROLLER_H
 #define TRABALHO_DE_FSOFT_CONTROLLER_H
 
-#include "Views.h"
+#include "../../headers/views/View.h"
 #include "registoView.h"
 #include "favoritosList.h"
 #include "ingredientesList.h"
-#include "ingredientesStockList.h"
+#include "../../headers/model/ingredienteStockList.h"
 #include "preferenciasList.h"
 #include "receitaList.h"
 #include "utils.h"
@@ -17,11 +17,11 @@
 
 class Controller {
 private:
-    registoView RegistoView;
+    RegistoView RegistoView;
     View view;
     favoritosList favList;
     ingredientesList ingrList;
-    IngredientesStockList ingrStockList;
+    ingredientesList ingrStockList;
     preferenciasList prefList;
     ReceitaList recList;
     FoodFinder app;

@@ -17,7 +17,7 @@ private:
     string descricao;
 
 public:
-    Ingrediente(const string& nomeIngrediente,const string descricao);
+    Ingrediente(const string& nomeIngrediente,const string& descricao);
     Ingrediente(const Ingrediente& ingredientes);
     ~Ingrediente();
 

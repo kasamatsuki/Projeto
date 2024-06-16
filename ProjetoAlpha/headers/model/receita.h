@@ -15,7 +15,7 @@ private:
     Preferencia preferencia_restricao;
 
 public:
-    Receita(const std::string& nomeReceita, const std::string& descricao, const std::list<Ingrediente>& ingredientes_receita, const Preferencia& preferencia_restricao);
+    Receita(const std::string& nomeReceita, const std::string& descricao, int rate);
     Receita(const Receita& obj); // Construtor de cópia
 
     ~Receita();

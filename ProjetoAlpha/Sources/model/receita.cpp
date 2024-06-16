@@ -83,3 +83,7 @@ bool Receita::operator==(const Receita& obj) const {
 bool Receita::operator==(const std::string& str) const {
     return this->nomeReceita == str;
 }
+
+Receita::Receita(const string &nomeReceita, const string &descricao, int rate) {
+
+}

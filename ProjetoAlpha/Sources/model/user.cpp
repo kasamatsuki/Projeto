@@ -33,7 +33,7 @@ void User::setName(const string& name) {
 }
 
 // Getter para o email
-string& User::getEmail() {
+const string & User::getEmail() {
     return email;
 }
 
