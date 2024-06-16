@@ -28,12 +28,21 @@ void Ingrediente::setStock(int stock)
 
 void Ingrediente::setAvailable()
 {
-    this->isAvailable = true;
+    if(stock >0){
+        this->isAvailable = true;
+    }else{
+        this->isAvailable = false;
+    }
+
 }
 
 void Ingrediente::setUnavailable()
 {
-    this->isAvailable = false;
+    if(stock >0){
+        this->isAvailable = true;
+    }else{
+        this->isAvailable = false;
+    }
 }
 
 bool Ingrediente::operator==(const Ingrediente &obj) const
@@ -58,11 +67,8 @@ bool Ingrediente::getIsAvailable() const {
 Ingrediente &Ingrediente::get() {
     return *this;
 }
-
-void Ingrediente::toggleAvailability() {
-    if(this->getIsAvailable()){
-        this->setUnavailable();
-        return;
+void Ingrediente::addStock(int quantity) {
+    if (quantity > 0) {
+        this->stock += quantity;
     }
-    this->setAvailable();
 }

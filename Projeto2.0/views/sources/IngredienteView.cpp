@@ -67,6 +67,6 @@ string IngredienteView::getName() {
 }
 
 void IngredienteView::invalidName() {
-    cout << "Invalid EAN";
+    cout << "Invalid Name";
 }
 

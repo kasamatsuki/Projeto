@@ -23,6 +23,9 @@ public:
     void add(Ingrediente obj);
     void edit(const string& name,int stock,bool isAvailable);
     void remove(const Ingrediente& obj);
+    void addStock(const std::string& name, int quantity);
+
+    void removeStock(const string& name, int quantity);
 
     void reset();
 };

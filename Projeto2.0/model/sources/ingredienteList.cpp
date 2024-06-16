@@ -87,5 +87,23 @@ void IngredienteList::reset() {
     this->ingredientes.clear();
 }
 
-
-
+void IngredienteList::addStock(const std::string& name, int quantity) {
+    auto it = search(name);
+    if (it != ingredientes.end()) {
+        it->addStock(quantity);
+    } else {
+        std::cout << "Ingredient not found." << std::endl;
+    }
+}
+void IngredienteList::removeStock(const std::string& name, int quantity) {
+    auto it = search(name);
+    if (it != ingredientes.end()) {
+        if (it->getStock() >= quantity) {
+            it->setStock(it->getStock() - quantity);
+        } else {
+            std::cout << "Insufficient stock. Stock not updated." << std::endl;
+        }
+    } else {
+        std::cout << "Ingredient not found." << std::endl;
+    }
+}

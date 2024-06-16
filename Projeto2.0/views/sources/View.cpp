@@ -87,10 +87,10 @@ int View::ingredientesMenu(){
         cout << " |       Ingredients Menu            |\n";
         cout << " |                                   |\n";
         cout << " | 1 - See Ingredients               |\n";
-        cout << " | 2 - Create Ingredients            |\n";
-        cout << " | 3 - Remove Ingredients            |\n";
-        cout << " | 4 - Edit Ingredients              |\n";
-        cout << " | 5 - See Ingredients Stock         |\n";
+        cout << " | 2 - See Ingredients in Stock      |\n";
+        cout << " | 3 - Add Stock                     |\n";
+        cout << " | 4 - Remove Stock                  |\n";
+        cout << " | 5 - Search Recipe with Stock      |\n";
         cout << " |                                   |\n";
         cout << " | 0 - Go back                       |\n";
         cout << "  -----------------------------------\n";
@@ -128,6 +128,7 @@ int View::restricoesMenu(){
         cout << " | 1 - View Restrictions        |\n";
         cout << " | 2 - Add Restrictions         |\n";
         cout << " | 3 - Remove Restrictions      |\n";
+        cout << " | 4 - Search Recipes with Rest |\n";
         cout << " |                              |\n";
         cout << " | 0 - Logout                   |\n";
         cout << "  ------------------------------\n";

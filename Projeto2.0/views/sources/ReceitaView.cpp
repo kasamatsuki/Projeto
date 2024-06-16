@@ -77,7 +77,7 @@ string ReceitaView::getName() {
 }
 
 void ReceitaView::invalidName() {
-    cout << "Invalid EAN";
+    cout << "Invalid Name";
 }
 
 IngredienteList ReceitaView::getIngredientesFromUser() {

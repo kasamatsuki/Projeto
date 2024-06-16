@@ -20,12 +20,14 @@ public:
     void setStock(int stock);
     void setAvailable();
     void setUnavailable();
-    void toggleAvailability();
+
 
     Ingrediente& get();
     const string& getName() const;
     int getStock() const;
     bool getIsAvailable() const;
+
+    void addStock(int quantity);
 
     bool operator == (string& ean) const;
     bool operator == (const Ingrediente &obj) const;
