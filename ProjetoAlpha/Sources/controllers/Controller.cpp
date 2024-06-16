@@ -1,13 +1,12 @@
 #include <iostream>
 #include <string>
-#include "controller.h"
+#include "../../headers/controllers/controller.h"
 #include "Utils.h"
 #include "DataConsistencyException.h"
 #include "User.h"
-#include "Recipe.h"
-#include "Ingredient.h"
+#include "../../headers/model/receita.h"
+#include "../../headers/model/ingrediente.h"
 #include "FoodFinder.h"
-
 using namespace std;
 
 Controller::Controller(FoodFinder& app) {

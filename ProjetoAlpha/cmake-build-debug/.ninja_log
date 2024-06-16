@@ -1,5 +1,11 @@
 # ninja log v6
-2	295	7394114758107099	CMakeFiles/Projeto.dir/main.obj	ffa69afad48b3fdf
-15	345	7394114758246168	CMakeFiles/Projeto.dir/sources/model/ingredienteList.obj	1585eea518fc4cf6
 3	389	7394206540234337	CMakeFiles/my_project.dir/main.cpp.obj	c72e772af622067b
 18	457	7394781935998697	CMakeFiles/my_project.dir/sources/model/ingredienteList.cpp.obj	fa6fc90667abcb0
+37	541	7402793243632159	CMakeFiles/my_project.dir/sources/model/data.cpp.obj	641091b76a02b508
+45	572	7402793243712954	CMakeFiles/my_project.dir/sources/model/preferencias.cpp.obj	8153ed3ad11faade
+51	581	7402793243765769	CMakeFiles/my_project.dir/sources/model/ingredientesStock.cpp.obj	3a1f3043a702f119
+56	641	7402793243820922	CMakeFiles/my_project.dir/sources/model/receitasList.cpp.obj	5a29ce81a18a32a9
+40	671	7402793243652183	CMakeFiles/my_project.dir/sources/model/ingredienteList.cpp.obj	fa6fc90667abcb0
+53	688	7402793243785790	CMakeFiles/my_project.dir/sources/model/ingredienteStockList.cpp.obj	f2b7b0f32405858f
+59	726	7402793243850956	CMakeFiles/my_project.dir/sources/model/user.cpp.obj	de21c46528dfc46b
+62	736	7402793243880983	CMakeFiles/my_project.dir/sources/views/registoview.cpp.obj	c5d7d2cbd91f3f15

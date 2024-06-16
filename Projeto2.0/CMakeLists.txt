@@ -76,8 +76,6 @@ include_directories(
 set(VIEWS_SOURCE_FILES
         ${PROJECT_VIEWS_HEADERS_DIR}/Utils.h
         ${PROJECT_VIEWS_SOURCES_DIR}/Utils.cpp
-        ${PROJECT_VIEWS_HEADERS_DIR}/View.h
-        ${PROJECT_VIEWS_SOURCES_DIR}/View.cpp
         ${PROJECT_VIEWS_HEADERS_DIR}/ClientView.h
         ${PROJECT_VIEWS_SOURCES_DIR}/ClientView.cpp
         ${PROJECT_VIEWS_HEADERS_DIR}/RestricoesView.h
@@ -86,6 +84,8 @@ set(VIEWS_SOURCE_FILES
         ${PROJECT_VIEWS_SOURCES_DIR}/IngredienteView.cpp
         ${PROJECT_VIEWS_HEADERS_DIR}/ReceitaView.h
         ${PROJECT_VIEWS_SOURCES_DIR}/ReceitaView.cpp
+        ${PROJECT_VIEWS_HEADERS_DIR}/View.h
+        ${PROJECT_VIEWS_SOURCES_DIR}/View.cpp
 )
 
 

@@ -4,23 +4,19 @@
 int User::num_users = 0;
 
 // Construtor que recebe todos os parâmetros necessários
-User::User( int& num,const string& nome, const string& email, const string& password, const string& role, const Data& nasc){
+User::User( int num,const string& nome, const string& email, const string& password){
     this->num_users = num_users++;
     this->num = num;
     this->nome = nome;
     this->email = email;
     this->password = password;
-    this->role = role;
-    this->nasc = nasc;
 }
 
 User::User(const User& obj) {
     this->nome = obj.nome;
     this->email = obj.email;
     this->password = obj.password;
-    this->role = obj.role;
     this->num = obj.num;
-    this->nasc = obj.nasc;
     this->receitas = obj.receitas;
 }
 
@@ -37,7 +33,7 @@ void User::setName(const string& name) {
 }
 
 // Getter para o email
-string& User::getEmail() {
+const string & User::getEmail() {
     return email;
 }
 
@@ -57,14 +53,7 @@ void User::setPassword(const string& password) {
 }
 
 // Getter para a data de nascimento
-const Data& User::getBirthday() const {
-    return nasc;
-}
-
 // Setter para a data de nascimento
-void User::setBirthday(const Data& birthday) {
-    nasc = birthday;
-}
 
 // Getter para o número do usuário
 int User::getNumber() const {

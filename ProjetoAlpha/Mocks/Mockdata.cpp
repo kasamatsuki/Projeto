@@ -2,37 +2,33 @@
 // Created by vasco on 16/06/2024.
 //
 #include "MockData.h"
-#include "user.h"
-#include "receita.h"
-#include "ingrediente.h"
-#include "preferencias.h"
 
-std::vector<user> MockData::getUsers() {
-    std::vector<user> users;
-    users.push_back(user("joao_silva", "João Silva", "joao@example.com"));
-    users.push_back(user("maria_oliveira", "Maria Oliveira", "maria@example.com"));
+std::vector<User> MockData::getusers() {
+    std::vector<User> users;
+    users.push_back(User(1,"João Silva", "joao@example.com", "vasco123"));
+    users.push_back(User(2,"Maria Oliveira", "maria@example.com", "vasco123"));
     return users;
 }
 
-std::vector<receita> MockData::getReceitas() {
-    std::vector<receita> receitas;
-    receitas.push_back(receita("Pasta Carbonara", "Deliciosa pasta italiana com molho cremoso", 4.5));
-    receitas.push_back(receita("Frango ao Curry", "Frango ao curry picante e saboroso", 4.7));
+std::vector<Receita> MockData::getReceitas() {
+    std::vector<Receita> receitas;
+    receitas.push_back(Receita("Pasta Carbonara", "Deliciosa pasta italiana com molho cremoso", 4.5));
+    receitas.push_back(Receita("Frango ao Curry", "Frango al curry picante e saboroso", 4.7));
     return receitas;
 }
 
-std::vector<ingrediente> MockData::getIngredientes() {
-    std::vector<ingrediente> ingredientes;
-    ingredientes.push_back(ingrediente("Tomate", "Tomates vermelhos frescos", 2));
-    ingredientes.push_back(ingrediente("Frango", "Peito de frango de criação livre", 5));
+std::vector<Ingrediente> MockData::getIngredientes() {
+    std::vector<Ingrediente> ingredientes;
+    ingredientes.push_back(Ingrediente("Tomate", "Tomates vermelhos frescos"));
+    ingredientes.push_back(Ingrediente("Frango", "Peito de frango de criação livre"));
     return ingredientes;
 }
 
-std::vector<ingrediente> MockData::getIngredientesStock() {
-    std::vector<ingrediente> ingredientesStock;
-    ingredientesStock.push_back(ingrediente("Alho", "Dentes de alho frescos", 1));
-    ingredientesStock.push_back(ingrediente("Cebola", "Cebolas amarelas", 3));
-    return ingredientesStock;
+std::vector<IngredienteStock> MockData::getIngredienteStock() {
+    std::vector<IngredienteStock> ingredienteStock;
+    ingredienteStock.push_back(Ingrediente("Alho", "Dentes de alho frescos"));
+    ingredienteStock.push_back(Ingrediente("Cebola", "Cebolas amarelas"));
+    return ingredienteStock;
 }
 
 std::vector<receita> MockData::getReceitasFavoritas() {

@@ -1,6 +1,3 @@
-//
-// Created by diogo on 16/06/2024.
-//
 #include "Utils.h"
 #include <iostream>
 #include <limits>

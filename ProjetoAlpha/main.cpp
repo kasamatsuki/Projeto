@@ -5,12 +5,12 @@
 // Copyright   : Your copyright notice
 //============================================================================
 
-#include "MockData.h"
+#include "Mocks/MockData.h"
 
 
 int main() {
     FoodFinder app;
-    app.setUsers(MockData::getUsers());
+    app.setUsers(MockData::getusers());
     app.setReceitas(MockData::getReceitas());
     app.setIngredientes(MockData::getIngredientes());
     app.setIngredientesStock(MockData::getIngredientesStock());
