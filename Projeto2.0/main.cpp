@@ -1,6 +1,6 @@
 #include <iostream>
 #include "FoodFinder.h"
-#include "mockdata/MockData.h"
+#include "mockdata/mockdata.h"
 #include "Controller.h"
 
 

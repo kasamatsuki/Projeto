@@ -43,7 +43,6 @@ void IngredienteList::add(Ingrediente obj) {
         this->ingredientes.push_back(obj);
     }else{
         string msg = "Ingrediente: " + obj.getName();
-        throw DuplicateEntryException(msg);
     }
 }
 

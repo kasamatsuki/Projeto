@@ -31,5 +31,7 @@ public:
     ReceitaList& getReceitaList();
     restricoesList& getRestricoesList();
 
+
+
 };
 #endif //MY_PROJECT_FOODFINDER_H

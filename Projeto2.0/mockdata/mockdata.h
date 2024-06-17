@@ -17,7 +17,7 @@ using namespace std;
 
 class MockData {
 private:
-    void loadMockClients(ClientList& clientList);
+    void loadMockClientes(ClientList& clientList);
     void loadMockIngrediente(IngredienteList& ingredienteList);
     void loadMockReceitas(ReceitaList& receitaList);
     void loadMockRestricoes(restricoesList& restricoesList1);

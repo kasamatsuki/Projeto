@@ -3,7 +3,6 @@
 #define MODEL_HEADERS_USER_H
 
 #include <string>
-#include "DuplicateEntryException.h"
 #include "iostream"
 
 using namespace std;

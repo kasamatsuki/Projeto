@@ -31,6 +31,5 @@ void ClientList::addClient(Client &client) {
         this->clients.push_back(client);
     }else {
         string msg = "Client: " + username;
-        throw DuplicateEntryException(msg);
     }
 }

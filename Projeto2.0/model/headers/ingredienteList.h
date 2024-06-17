@@ -7,7 +7,6 @@
 
 #include <list>
 #include "ingrediente.h"
-#include "DuplicateEntryException.h"
 
 //In the future add (or not) code to verify if the product is in a client cart
 

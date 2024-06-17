@@ -29,6 +29,9 @@ void Controller::run() {
         }while(op != 0);
     }else{
             runGeral();
+        if (op != 0) {
+            op = this->view.menuPrincipal();
+        }
     }
 }
 
@@ -86,7 +89,7 @@ void Controller::runGeral() {
     int op = -1;
     auto* loggedClient = (Client*)this->loggedUser;
     do{
-        op = this->view.menuPrincipal();
+        op = this->view.menuGeral();
         switch(op){
             case 1:
                 runReceitas();     //1 - Recipes
@@ -364,9 +367,9 @@ void Controller::runRestricoes() {
 
 
         // Menu de receitas
-        op = this->view.ingredientesMenu();
+        op = this->view.restricoesMenu();
         switch (op) {
-            case 1: // 1 - View restricoes
+            case 1:
                 this->restricoesView.printRestricaoList(allRestricoes, "Ingredient List");
                 op = -1;
                 break;
@@ -376,12 +379,13 @@ void Controller::runRestricoes() {
                 op = -1;
                 break;
 
-            case 3:runRemoveRestrictions();          // 3 - Edit Receita
+            case 3:runRemoveRestrictions();
                 allRestricoes = restricoesListVarivel.getAll();
                 op = -1;
                 break;
 
-            case 4:runSearchReceitaWithRestricao();          // 4 - Delete Receita
+            case 4:
+                runSearchReceitaWithRestricao();
                 allRestricoes = restricoesListVarivel.getAll();
                 op = -1;
                 break;
@@ -396,12 +400,10 @@ void Controller::runAddRestricao(){
     Restricao novaRestricao = this->restricoesView.getRestricao();
     restricoesList& listaRestricoes = this->model.getRestricoesList();
 
-    try {
+
         listaRestricoes.addRestricoes(novaRestricao);
         std::cout << "Restriction added successfully." << std::endl;
-    } catch (DuplicateEntryException& e) {
-        std::cout << "Error adding restriction: " << e.what() << std::endl;
-    }
+
 }
 void Controller::runRemoveRestrictions(){
 
@@ -426,7 +428,7 @@ void Controller::runRemoveRestrictions(){
     }
 }
 void Controller::runSearchReceitaWithRestricao(){
-    // Obtém as listas atualizadas do modelo
+
     restricoesList& listaRestricoes = this->model.getRestricoesList();
     ReceitaList& listaReceitas = this->model.getReceitaList();
 
@@ -438,6 +440,9 @@ void Controller::runSearchReceitaWithRestricao(){
 
     // Solicita ao usuário que selecione uma restrição
     std::string nomeRestricao = Utils::getString("Enter the name of the restriction to search recipes:");
+
+    // Depuração: Imprime o nome da restrição digitado pelo usuário
+    std::cout << "Nome da restrição digitado: " << nomeRestricao << std::endl;
 
     // Obtém a restrição pelo nome
     Restricao* restricaoSelecionada = listaRestricoes.getByName(nomeRestricao);
@@ -455,6 +460,9 @@ void Controller::runSearchReceitaWithRestricao(){
 
     // Itera sobre todas as receitas para verificar as que têm a restrição selecionada
     for (auto& receita : allReceitas) {
+        // Depuração: Imprime a comparação entre as restrições
+        std::cout << "Comparando receita '" << receita.getNomeReceita() << "' com restrição '" << restricaoSelecionada->getName() << "'" << std::endl;
+
         if (receita.GetRestricao() == *restricaoSelecionada) {
             receitasComRestricao.push_back(receita);
         }

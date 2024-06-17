@@ -33,14 +33,14 @@ void ReceitaView::printReceitaList(list<Receita> &receitas, const string& listTi
     cout << setw(20) << "Name";
     cout << setw(30) << "Description";
     cout << setw(20) << "Restriction";
-    cout << setw(10) << "Favorite";
+    cout << setw(15) << "Favorite";
     cout << endl;
 
     for (auto it = receitas.begin(); it != receitas.end(); ++it) {
         cout << setw(20) << it->getNomeReceita();
         cout << setw(30) << it->getDescricao();
         cout << setw(20) << it->GetRestricao().getName();
-        cout << setw(10) << (it->getFav() ? "Yes" : "No");
+        cout << setw(5) << (it->getFav() ? "Yes" : "No");
         cout << endl;
     }
 }

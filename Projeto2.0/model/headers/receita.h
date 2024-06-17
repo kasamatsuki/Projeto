@@ -11,15 +11,17 @@ private:
     std::string name;
     std::string descricao;
     Restricao restricao;
-    IngredienteList ingredientes;
     bool fav;
+    IngredienteList ingredientes;
+
 
 public:
     Receita(std::string &name,
             std::string &descricao,
             IngredienteList &ingredientes,
             Restricao &restricao,
-            bool &fav);
+            bool &fav
+            );
 
     void SetNomeReceita(std::string &name);
     void SetDescricao(std::string &descricao);

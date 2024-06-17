@@ -1,5 +1,4 @@
 #include "restricoesList.h"
-#include "DuplicateEntryException.h"
 
 list<Restricao> restricoesList::getAll() {
     list<Restricao> newSupplierList (this->restricoes);
@@ -30,8 +29,7 @@ void restricoesList::addRestricoes(const Restricao &restricao) {
     if(it == this->restricoes.end()){
         this->restricoes.push_back(restricao);
     }else {
-        string msg = "Supplier: " + name;
-        throw DuplicateEntryException(msg);
+        string msg = "Restricion: " + name;
     }
 }
 

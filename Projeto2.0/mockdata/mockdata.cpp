@@ -16,138 +16,134 @@
 #include "receitaList.h"
 #include "restricoesList.h"
 
+#include "mockdata.h"
+
 using namespace std;
 
-class MockData {
-public:
-    void loadMockClientes(ClientList& clientList);
-    void loadMockIngrediente(IngredienteList& ingredienteList);
-    void loadMockReceitas(ReceitaList& receitaList);
-    void loadMockRestricoes(restricoesList& restricoesList1);
-    void generateData(ClientList& clientList, IngredienteList& ingredienteList, ReceitaList& receitaList, restricoesList& restricoesList1);
-};
+void MockData::loadMockClientes(ClientList& clientList) {
+    int rows = 4;
+    int columns = 3;
+    string data[rows][columns];
 
-void MockData::loadMockClientes(ClientList &clientList) {
-    ifstream file("../Data/MockClientes.csv");
+    ifstream file("../data/MockClientes.csv");
 
     if (!file.is_open()) {
         cout << "File not opened" << endl;
         return;
     }
 
-    string line;
-    getline(file, line);  // Skip header
+    for(int row = 0; row < rows; ++row)
+    {
+        string line;
+        getline(file, line);
 
-    while (getline(file, line)) {
         stringstream iss(line);
-        string name, password;
 
-
-        getline(iss, name, ',');
-        getline(iss, password, ',');
-
-        Client client( name, password);
+        for (int col = 0; col < columns; ++col)
+        {
+            string val;
+            getline(iss, val, ',');
+            data[row][col] = val;
+        }
+    }
+    for(int i = 1; i < rows; ++i){
+        Client client(data[i][0],data[i][1],data[i][2]);
         clientList.addClient(client);
     }
-
-    file.close();  // Always close the file when done
 }
 
 
 void MockData::loadMockIngrediente(IngredienteList &ingredienteList) {
-    const int rows = 30;
+    const int rows = 5;
     const int columns = 3;
     std::string data[rows][columns];
 
-    std::ifstream file("../Data/MockIngredientes.csv");
+    std::ifstream file("../Data/MockIngrediente.csv");
 
     if (!file.is_open()) {
         std::cout << "File not opened" << std::endl;
         return;
     }
 
-    // Ler os dados do arquivo CSV
     for(int row = 0; row < rows; ++row) {
-        std::string line;
+        string line;
         getline(file, line);
 
         std::stringstream iss(line);
 
         for (int col = 0; col < columns; ++col) {
             std::string val;
-            getline(iss, val, ',');
+            getline(iss, val, ';');
             data[row][col] = val;
         }
     }
 
-    // Processar os dados lidos e adicionar à lista de ingredientes
-    for(int i = 0; i < rows; ++i) {
-        std::string name = data[i][0];
-        std::string stockStr = data[i][1];
-        std::string isAvailableStr = data[i][2];
+    for(int i = 1; i < rows; ++i) {
+        //name	description	category	brand 	ean	stock	supplierPrice	sellingPrice	isAvailable
+        replace(data[i][1].begin(), data[i][1].end(), ',', '.');
+        replace(data[i][2].begin(), data[i][2].end(), ',', '.');
 
-        try {
-            // Converter dados para os tipos apropriados
-            int stock = std::stoi(stockStr);
-            bool isAvailable = std::stoi(isAvailableStr) != 0; // Converte para bool
+        int stock = 0;
+        std::stringstream ss_stock(data[i][1]);
+        ss_stock >> stock;
+        bool isAvailable = (data[i][2] == "1");
 
-            // Criar objeto Ingrediente e adicioná-lo à lista de ingredientes
-            Ingrediente ingrediente(name, stock, isAvailable);
-            ingredienteList.add(ingrediente);
-        } catch (const std::exception &e) {
-            std::cerr << "Error converting data in row " << i << ": " << e.what() << std::endl;
-        }
+        // Criar o objeto Ingrediente usando os dados convertidos
+        Ingrediente ingrediente(data[i][0],
+                                stock,         // stock (convertido para int)
+                                isAvailable); // isAvailable (convertido para bool)
+
+        // Adicionar o ingrediente à lista de ingredientes
+        ingredienteList.add(ingrediente);
     }
-
-    file.close();
 }
-/*
 
 void MockData::loadMockReceitas(ReceitaList &receitaList) {
-    ifstream file("../Data/MockReceitas.csv");
+    const int rows = 4;
+    const int columns = 5;
+    std::string data[rows][columns];
+
+    std::ifstream file("../Data/MockReceitas.csv");
 
     if (!file.is_open()) {
-        cout << "File not opened" << endl;
+        std::cout << "File not opened" << std::endl;
         return;
     }
 
-    string line;
-    getline(file, line);  // Skip header
+    for(int row = 0; row < rows; ++row) {
+        string line;
+        getline(file, line);
 
-    while (getline(file, line)) {
-        stringstream iss(line);
-        string name, descricao, restricaoNome, ingredientes_str, fav;
+        std::stringstream iss(line);
 
-        getline(iss, name, ',');
-        getline(iss, descricao, ',');
-        getline(iss, restricaoNome, ',');  // Assume restricaoNome é o nome da Restricao
-        getline(iss, fav, ',');
-        getline(iss, ingredientes_str, ',');
-
-        // Processar lista de ingredientes
-        vector<string> ingredientes;
-        stringstream ingrediente_ss(ingredientes_str);
-        string ingrediente;
-        while (getline(ingrediente_ss, ingrediente, ';')) {
-            ingredientes.push_back(ingrediente);
+        for (int col = 0; col < columns; ++col) {
+            std::string val;
+            getline(iss, val, ';');
+            data[row][col] = val;
         }
-
-        // Criar objeto Receita
-        Receita receita(name, descricao, restricaoNome, (fav == "true"));
-
-        // Adicionar ingredientes à receita
-        for (const auto &ingrediente_str : ingredientes) {
-            Ingrediente ingrediente(ingrediente_str);
-            receita.addIngrediente(ingrediente);
-        }
-
-        // Adicionar a receita à lista receitaList passada por referência
-        receitaList.addReceita(receita);
     }
 
-    file.close();
+    for (int i = 0; i < rows; ++i) {
+        //name	description	category	brand 	ean	stock	supplierPrice	sellingPrice	isAvailable
+        bool isFav = (data[i][4] == "1");
+        Ingrediente ingrediente(data[i][2], 1, true); // Criar o objeto Ingrediente
+        Restricao restricao(data[i][3]); // Criar o objeto Restricao
+
+        // Criar a lista de ingredientes e adicionar o ingrediente criado
+        IngredienteList ingredienteList;
+        ingredienteList.add(ingrediente);
+
+        // Criar o objeto Receita usando os dados convertidos
+        Receita receita(data[i][0],
+                        data[i][1],
+                        ingredienteList,
+                        restricao,
+                        isFav);
+
+        // Adicionar a receita à lista de receitas
+        receitaList.addReceita(receita);
+    }
 }
-*/
 void MockData::loadMockRestricoes(restricoesList &restricoesList1) {
     ifstream file("../Data/MockRestricoes.csv");
 
@@ -174,23 +170,9 @@ void MockData::loadMockRestricoes(restricoesList &restricoesList1) {
 }
 
 
-void MockData::generateData(ClientList& clientList, IngredienteList& ingredienteList, ReceitaList& receitaList, restricoesList& restricoesList) {
-    loadMockClientes(clientList);
-    loadMockIngrediente(ingredienteList);
-   // loadMockReceitas(receitaList);
-    loadMockRestricoes(restricoesList);
-}
-
-int main() {
-    ClientList clientList;
-    IngredienteList ingredienteList;
-    ReceitaList receitaList;
-    restricoesList restricoesList;
-
-    MockData mockData;
-    mockData.generateData(clientList, ingredienteList, receitaList, restricoesList);
-
-    // Further processing if needed
-
-    return 0;
+void MockData::generateData(FoodFinder &foodFinder) {
+    loadMockClientes(foodFinder.getClientList());
+    loadMockIngrediente(foodFinder.getIngredienteList());
+    loadMockReceitas(foodFinder.getReceitaList());
+   loadMockRestricoes(foodFinder.getRestricoesList());
 }

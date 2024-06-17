@@ -23,8 +23,6 @@ include_directories(
         ${PROJECT_EXCEPTION_HEADERS_DIR}
         ${PROJECT_EXCEPTION_SOURCES_DIR})
 set(EXCEPTION_SOURCE_FILES
-        ${PROJECT_EXCEPTION_HEADERS_DIR}/DuplicateEntryException.h
-        ${PROJECT_EXCEPTION_SOURCES_DIR}/DuplicateEntryException.cpp
         ${PROJECT_EXCEPTION_HEADERS_DIR}/InvalidDataException.h
         ${PROJECT_EXCEPTION_SOURCES_DIR}/InvalidDataException.cpp
 )
@@ -93,8 +91,9 @@ set(VIEWS_SOURCE_FILES
 set(SOURCE_FILES
         controller/Controller.h
         controller/Controller.cpp
-        mockdata/MockData.h
-        mockdata/MockData.cpp)
+        mockdata/mockData.h
+        mockdata/mockData.cpp
+        main.cpp)
 
 
 
@@ -104,4 +103,5 @@ add_executable(
         ${MODEL_SOURCE_FILES}
         ${VIEWS_SOURCE_FILES}
         ${EXCEPTION_SOURCE_FILES}
+        main.cpp
 )

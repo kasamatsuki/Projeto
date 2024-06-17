@@ -1,32 +1,6 @@
 ingrediente,quantidade, isAvailable
-amêndoas,10,1
-canela em pó,5,1
-leite condensado,22,1
-morangos,15,1
-pistachos,8,1
-raspas de limão,6,1
-caramelo líquido,9,1
-castanha-do-pará,12,1
-avelãs,7,1
-goiabada,14,1
-farinha,50,1
-açúcar,30,1
-ovos,60,1
-manteiga,20,1
-leite,40,1
-sal,10,1
-extrato de baunilha,5,1
-fermento em pó,8,1
-gotas de chocolate,12,1
-nozes,6,1
-maçãs,20,1
-limões,18,1
-abacaxis,12,1
-kiwis,15,1
-pêssegos,10,1
-maracujás,9,1
-uvas,30,1
-beterrabas,25,1
-cenouras,28,1
-espinafres,35,1
+amêndoas;10;1
+canela em pó;5;1
+leite condensado;22;1
+morangos;15;1
 

@@ -31,7 +31,6 @@ void ReceitaList::addReceita(Receita& receita) {
         this->receitas.push_back(receita);
     } else {
         std::string msg = "Receita: " + nomeReceita + " já existe.";
-        throw DuplicateEntryException(msg);
     }
 }
 

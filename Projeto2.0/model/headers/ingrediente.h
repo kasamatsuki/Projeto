@@ -14,7 +14,7 @@ private:
     int stock;
     bool isAvailable{};
 public:
-    Ingrediente(const string& name,int stock,bool isAvailable);
+    Ingrediente(const string& name, int stock, bool isAvailable);
 
     void setIngredienteName(const string& name);
     void setStock(int stock);

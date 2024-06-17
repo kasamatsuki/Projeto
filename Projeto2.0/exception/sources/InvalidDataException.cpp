@@ -3,7 +3,7 @@
 
 
 InvalidDataException::InvalidDataException(string data){
-    this->data = data;
+    //this->data = data;
 }
 
 const char* InvalidDataException::what(){
