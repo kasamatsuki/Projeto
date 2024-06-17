@@ -1,5 +1,5 @@
 # ninja log v6
-30	177	7402468294122074	CMakeFiles/main.cpp.dir/mockdata/mockdata.cpp.obj	1ecf6adb508b7b6d
+5	435	7402991935193427	CMakeFiles/main.cpp.dir/mockdata/mockdata.cpp.obj	1ecf6adb508b7b6d
 31	464	7402352103848668	CMakeFiles/my_project.dir/model/sources/Client.cpp.obj	fcd1da82a76c91
 39	384	7402352103938990	CMakeFiles/my_project.dir/model/sources/restricoes.cpp.obj	7d9628b283acb95e
 37	386	7402352103908962	CMakeFiles/my_project.dir/model/sources/ingrediente.cpp.obj	badf6cb7eed400a8
@@ -14,7 +14,7 @@
 11	182	7402468293932447	CMakeFiles/main.cpp.dir/controller/controller.cpp.obj	6f115e177458d487
 15	366	7402871827178506	CMakeFiles/main.cpp.dir/model/sources/ingrediente.cpp.obj	543095757f3db3cc
 47	646	7402468294287704	CMakeFiles/main.cpp.dir/model/sources/restricoes.cpp.obj	261d2c8935293cb7
-1	209	7402972368487746	build.ninja	e7d2244f4d6c87e2
+2	215	7402993103799246	build.ninja	e7d2244f4d6c87e2
 39	647	7402468294209357	CMakeFiles/main.cpp.dir/model/sources/Date.cpp.obj	16e53afd852cbada
 52	677	7402468294342887	CMakeFiles/main.cpp.dir/model/sources/restricoesList.cpp.obj	58f742069224d80
 22	368	7402964704210197	CMakeFiles/main.cpp.dir/model/sources/user.cpp.obj	bedbdb6c75eb8a0c
@@ -32,4 +32,4 @@
 28	542	7402885232664454	CMakeFiles/main.cpp.dir/views/sources/IngredienteView.cpp.obj	72e54bb071d62c4d
 31	617	7402885232699446	CMakeFiles/main.cpp.dir/views/sources/ReceitaView.cpp.obj	94d08d643ab16eea
 10	560	7402965361064017	CMakeFiles/main.cpp.dir/controller/Controller.cpp.obj	1efc00940949fb7e
-2	215	7402972368487746	build.ninja	e7d2244f4d6c87e2
+435	586	7402991939497179	main.cpp.exe	d4a3cf3aad2c5b4d

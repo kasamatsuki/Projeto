@@ -4,14 +4,15 @@
 #include "Controller.h"
 
 
+
 using namespace std;
 
 int main() {
 
     FoodFinder foodFinder("FoodFinder");
 
-    //MockData mock;
-    //mock.generateData(itStore);
+    MockData mock;
+    mock.generateData(foodFinder);
 
     Controller controller(foodFinder);
     controller.run();
