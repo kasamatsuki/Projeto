@@ -98,6 +98,7 @@ set(SOURCE_FILES
 
 
 add_executable(
+        FoodFinder
         main.cpp
         ${SOURCE_FILES}
         ${MODEL_SOURCE_FILES}

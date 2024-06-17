@@ -41,178 +41,178 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/diogo/CLionProjects/Projeto2.0/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target main.cpp
+# Object build statements for EXECUTABLE target FoodFinder
 
 
 #############################################
-# Order-only phony target for main.cpp
+# Order-only phony target for FoodFinder
 
-build cmake_object_order_depends_target_main.cpp: phony || CMakeFiles/main.cpp.dir
+build cmake_object_order_depends_target_FoodFinder: phony || CMakeFiles/FoodFinder.dir
 
-build CMakeFiles/main.cpp.dir/controller/Controller.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/controller/Controller.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\controller\Controller.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/main.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/main.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\controller
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir
 
-build CMakeFiles/main.cpp.dir/mockdata/mockdata.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/mockdata/mockdata.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\mockdata\mockdata.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/controller/Controller.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/controller/Controller.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\controller\Controller.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\mockdata
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\controller
 
-build CMakeFiles/main.cpp.dir/main.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/main.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\main.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/mockdata/mockdata.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/mockdata/mockdata.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\mockdata\mockdata.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\mockdata
 
-build CMakeFiles/main.cpp.dir/model/sources/Client.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/Client.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\Client.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/Client.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/Client.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\Client.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/ClientList.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/ClientList.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\ClientList.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/ClientList.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/ClientList.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\ClientList.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/Date.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/Date.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\Date.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/Date.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/Date.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\Date.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/ingrediente.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/ingrediente.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\ingrediente.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/ingrediente.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/ingrediente.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\ingrediente.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/receita.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/receita.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\receita.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/receita.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/receita.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\receita.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/restricoes.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/restricoes.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\restricoes.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/restricoes.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/restricoes.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\restricoes.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/receitaList.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/receitaList.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\receitaList.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/receitaList.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/receitaList.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\receitaList.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/restricoesList.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/restricoesList.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\restricoesList.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/restricoesList.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/restricoesList.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\restricoesList.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/ingredienteList.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/ingredienteList.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\ingredienteList.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/ingredienteList.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/ingredienteList.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\ingredienteList.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/user.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/user.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\user.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/user.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/user.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\user.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/model/sources/FoodFinder.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/FoodFinder.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\model\sources\FoodFinder.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/model/sources/FoodFinder.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/model/sources/FoodFinder.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\model\sources\FoodFinder.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\model\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\model\sources
 
-build CMakeFiles/main.cpp.dir/views/sources/Utils.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/Utils.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\views\sources\Utils.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/views/sources/Utils.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/Utils.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\views\sources\Utils.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\views\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\views\sources
 
-build CMakeFiles/main.cpp.dir/views/sources/ClientView.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/ClientView.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\views\sources\ClientView.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/views/sources/ClientView.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/ClientView.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\views\sources\ClientView.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\views\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\views\sources
 
-build CMakeFiles/main.cpp.dir/views/sources/RestricaoView.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/RestricaoView.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\views\sources\RestricaoView.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/views/sources/RestricaoView.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/RestricaoView.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\views\sources\RestricaoView.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\views\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\views\sources
 
-build CMakeFiles/main.cpp.dir/views/sources/IngredienteView.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/IngredienteView.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\views\sources\IngredienteView.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/views/sources/IngredienteView.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/IngredienteView.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\views\sources\IngredienteView.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\views\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\views\sources
 
-build CMakeFiles/main.cpp.dir/views/sources/ReceitaView.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/ReceitaView.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\views\sources\ReceitaView.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/views/sources/ReceitaView.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/ReceitaView.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\views\sources\ReceitaView.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\views\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\views\sources
 
-build CMakeFiles/main.cpp.dir/views/sources/View.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/View.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\views\sources\View.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/views/sources/View.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/views/sources/View.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\views\sources\View.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\views\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\views\sources
 
-build CMakeFiles/main.cpp.dir/exception/sources/InvalidDataException.cpp.obj: CXX_COMPILER__main.2ecpp_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/exception/sources/InvalidDataException.cpp || cmake_object_order_depends_target_main.cpp
-  DEP_FILE = CMakeFiles\main.cpp.dir\exception\sources\InvalidDataException.cpp.obj.d
+build CMakeFiles/FoodFinder.dir/exception/sources/InvalidDataException.cpp.obj: CXX_COMPILER__FoodFinder_unscanned_Debug C$:/Users/diogo/CLionProjects/Projeto2.0/exception/sources/InvalidDataException.cpp || cmake_object_order_depends_target_FoodFinder
+  DEP_FILE = CMakeFiles\FoodFinder.dir\exception\sources\InvalidDataException.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/diogo/CLionProjects/Projeto2.0/controller -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/exception/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/model/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/model/sources -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/headers -IC:/Users/diogo/CLionProjects/Projeto2.0/VIEWS/sources
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.cpp.dir\exception\sources
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
+  OBJECT_FILE_DIR = CMakeFiles\FoodFinder.dir\exception\sources
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target main.cpp
+# Link build statements for EXECUTABLE target FoodFinder
 
 
 #############################################
-# Link the executable main.cpp.exe
+# Link the executable FoodFinder.exe
 
-build main.cpp.exe: CXX_EXECUTABLE_LINKER__main.2ecpp_Debug CMakeFiles/main.cpp.dir/controller/Controller.cpp.obj CMakeFiles/main.cpp.dir/mockdata/mockdata.cpp.obj CMakeFiles/main.cpp.dir/main.cpp.obj CMakeFiles/main.cpp.dir/model/sources/Client.cpp.obj CMakeFiles/main.cpp.dir/model/sources/ClientList.cpp.obj CMakeFiles/main.cpp.dir/model/sources/Date.cpp.obj CMakeFiles/main.cpp.dir/model/sources/ingrediente.cpp.obj CMakeFiles/main.cpp.dir/model/sources/receita.cpp.obj CMakeFiles/main.cpp.dir/model/sources/restricoes.cpp.obj CMakeFiles/main.cpp.dir/model/sources/receitaList.cpp.obj CMakeFiles/main.cpp.dir/model/sources/restricoesList.cpp.obj CMakeFiles/main.cpp.dir/model/sources/ingredienteList.cpp.obj CMakeFiles/main.cpp.dir/model/sources/user.cpp.obj CMakeFiles/main.cpp.dir/model/sources/FoodFinder.cpp.obj CMakeFiles/main.cpp.dir/views/sources/Utils.cpp.obj CMakeFiles/main.cpp.dir/views/sources/ClientView.cpp.obj CMakeFiles/main.cpp.dir/views/sources/RestricaoView.cpp.obj CMakeFiles/main.cpp.dir/views/sources/IngredienteView.cpp.obj CMakeFiles/main.cpp.dir/views/sources/ReceitaView.cpp.obj CMakeFiles/main.cpp.dir/views/sources/View.cpp.obj CMakeFiles/main.cpp.dir/exception/sources/InvalidDataException.cpp.obj
+build FoodFinder.exe: CXX_EXECUTABLE_LINKER__FoodFinder_Debug CMakeFiles/FoodFinder.dir/main.cpp.obj CMakeFiles/FoodFinder.dir/controller/Controller.cpp.obj CMakeFiles/FoodFinder.dir/mockdata/mockdata.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/Client.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/ClientList.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/Date.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/ingrediente.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/receita.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/restricoes.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/receitaList.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/restricoesList.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/ingredienteList.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/user.cpp.obj CMakeFiles/FoodFinder.dir/model/sources/FoodFinder.cpp.obj CMakeFiles/FoodFinder.dir/views/sources/Utils.cpp.obj CMakeFiles/FoodFinder.dir/views/sources/ClientView.cpp.obj CMakeFiles/FoodFinder.dir/views/sources/RestricaoView.cpp.obj CMakeFiles/FoodFinder.dir/views/sources/IngredienteView.cpp.obj CMakeFiles/FoodFinder.dir/views/sources/ReceitaView.cpp.obj CMakeFiles/FoodFinder.dir/views/sources/View.cpp.obj CMakeFiles/FoodFinder.dir/exception/sources/InvalidDataException.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\main.cpp.dir
+  OBJECT_DIR = CMakeFiles\FoodFinder.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = main.cpp.exe
-  TARGET_IMPLIB = libmain.cpp.dll.a
-  TARGET_PDB = main.cpp.exe.dbg
+  TARGET_FILE = FoodFinder.exe
+  TARGET_IMPLIB = libFoodFinder.dll.a
+  TARGET_PDB = FoodFinder.exe.dbg
 
 
 #############################################
@@ -240,7 +240,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build main.cpp: phony main.cpp.exe
+build FoodFinder: phony FoodFinder.exe
 
 # =============================================================================
 # Folder targets.
@@ -250,7 +250,7 @@ build main.cpp: phony main.cpp.exe
 #############################################
 # Folder: C:/Users/diogo/CLionProjects/Projeto2.0/cmake-build-debug
 
-build all: phony main.cpp.exe
+build all: phony FoodFinder.exe
 
 # =============================================================================
 # Built-in targets

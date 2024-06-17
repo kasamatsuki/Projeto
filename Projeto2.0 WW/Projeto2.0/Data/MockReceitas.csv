@@ -1,0 +1,5 @@
+name,descricao,restricao,fav,ingredientes
+Lasanha de Frango,lasanha com frango.,Sem restricoes,true,Massa de lasanha;
+Salada Caesar,Salada Caesar classica com molho especial.,Intolerancia à lactose,false,Alface ;
+Risoto de Cogumelos,Cogumelos frescos.,Sem restrições,true,Arroz arbóreo;
+Bolo de Chocolate,Bolo de choco1late a.,Sem gluten,false,Farinha de amendoas;
