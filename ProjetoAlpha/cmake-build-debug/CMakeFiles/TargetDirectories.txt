@@ -1,3 +1,0 @@
-C:/Users/Miguel/Documents/Code Review/Projeto/ProjetoAlpha/cmake-build-debug/CMakeFiles/my_project.dir
-C:/Users/Miguel/Documents/Code Review/Projeto/ProjetoAlpha/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Miguel/Documents/Code Review/Projeto/ProjetoAlpha/cmake-build-debug/CMakeFiles/rebuild_cache.dir
