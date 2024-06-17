@@ -13,7 +13,7 @@
 
 class RestricoesView {
 public:
-    Restricao getRestricao(const string& name);
+    Restricao getRestricao();
     void printRestricao(Restricao* restricao);
     void printRestricaoList(list<Restricao>& restricoes, const string& listTitle);
 

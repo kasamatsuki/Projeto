@@ -11,9 +11,9 @@ using namespace std;
 
 #define RESTRICAOSPACE 15
 
-Restricao RestricoesView::getRestricao(const string& name) {
+Restricao RestricoesView::getRestricao() {
 
-    return Utils::getString("Insert resctrition name");
+    return Utils::getString("Insert restrition name");
 
 
 }

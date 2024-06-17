@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.24)
 project(FoodFinder)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_WIN32_EXECUTABLE OFF)
 
 set(PROJECT_CONTROLLER_DIR
         ${PROJECT_SOURCE_DIR}/controller)

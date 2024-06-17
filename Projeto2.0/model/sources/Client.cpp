@@ -55,3 +55,4 @@ string Client::getName() const {
 Client &Client::get() {
     return *this;
 }
+

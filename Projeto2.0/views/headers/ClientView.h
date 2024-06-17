@@ -10,6 +10,7 @@ class ClientView {
 public:
     string getUsername();
     string getPassword();
+    void printClient(Client* client);
     string getName();
     void invalidUsername();
     void incorrectPassword();

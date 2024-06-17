@@ -23,6 +23,7 @@ public:
     void setName(string pName);
     void setPassword(string& pPassword);
     void setRole(string pRole);
+    void printUserInfo();
 
     string getPassword();
     string getName();

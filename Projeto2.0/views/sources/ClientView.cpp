@@ -6,6 +6,7 @@
 #include "Utils.h"
 #include "InvalidDataException.h"
 #include "View.h"
+#include <iomanip>
 
 using namespace std;
 
@@ -43,7 +44,12 @@ string ClientView::getName() {
     }while(spaceCount !=1);
     return  name;
 }
+void ClientView::printClient(Client* client) {
 
+    cout << "Client Information:" << endl;
+    cout << "Username: " << getUsername() << endl;
+    cout << "Password: " << getPassword() << endl;
+}
 
 void ClientView::clientNotFound() {
     cout << "Client not found";

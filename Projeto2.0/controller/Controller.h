@@ -45,12 +45,16 @@ private:
     void runSearchReceita();
 
     void runAddRestricao();
+    void runRemoveRestrictions();
+    void runSearchReceitaWithRestricao();
 
     void runSeeIngredientesInStock();
     void runAddStock();
     void runDeleteStock();
     void runSearchReceitaWithStock();
 
+
+    void printLoggedUserInfo();
 
 
     void login(User* pUser);

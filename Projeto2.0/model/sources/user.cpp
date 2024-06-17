@@ -42,3 +42,4 @@ void User::setUsername(string &pUsername) {
 User::User() {
 
 }
+

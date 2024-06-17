@@ -47,9 +47,7 @@ int View::menuUser(){
         cout << "\n  --------------------------\n";
         cout << " |         User Menu        |\n";
         cout << " |                          |\n";
-        cout << " | 1 - See user datails     |\n";
-        cout << " | 2 - Change Password      |\n";
-        cout << " | 3 - Main Menu            |\n";
+        cout << " | 1 - See user details     |\n";
         cout << " |                          |\n";
         cout << " | 0 - Go back              |\n";
         cout << "  --------------------------\n";

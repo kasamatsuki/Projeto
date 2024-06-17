@@ -18,6 +18,7 @@ public:
     string getUsername() const;
     string getPassword() const;
     string getName() const;
+    void printUserInfo();
 
     bool doesPasswordMatch(string& password);
 

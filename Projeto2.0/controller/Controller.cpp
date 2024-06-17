@@ -97,9 +97,6 @@ void Controller::runGeral() {
             case 3:
                 runRestricoes();      //3 - Restrictions
                 break;
-            case 4:                         //4 - User
-                runUser();
-                break;
             default:
                 break;
         }
@@ -379,17 +376,13 @@ void Controller::runRestricoes() {
                 op = -1;
                 break;
 
-            case 3:runAddStock();          // 3 - Edit Receita
-                allIngredientes = ingredienteList.getAll();
+            case 3:runRemoveRestrictions();          // 3 - Edit Receita
+                allRestricoes = restricoesListVarivel.getAll();
                 op = -1;
                 break;
 
-            case 4:runDeleteStock();          // 4 - Delete Receita
-                allIngredientes = ingredienteList.getAll();
-                op = -1;
-                break;
-            case 5:runSearchReceitaWithStock();          // 5 - Delete Receita
-                allIngredientes = ingredienteList.getAll();
+            case 4:runSearchReceitaWithRestricao();          // 4 - Delete Receita
+                allRestricoes = restricoesListVarivel.getAll();
                 op = -1;
                 break;
             default:
@@ -400,4 +393,78 @@ void Controller::runRestricoes() {
 
 void Controller::runAddRestricao(){
 
+    Restricao novaRestricao = this->restricoesView.getRestricao();
+    restricoesList& listaRestricoes = this->model.getRestricoesList();
+
+    try {
+        listaRestricoes.addRestricoes(novaRestricao);
+        std::cout << "Restriction added successfully." << std::endl;
+    } catch (DuplicateEntryException& e) {
+        std::cout << "Error adding restriction: " << e.what() << std::endl;
+    }
 }
+void Controller::runRemoveRestrictions(){
+
+    restricoesList& listaRestricoes = this->model.getRestricoesList();
+    list<Restricao> allRestricoes = listaRestricoes.getAll();
+
+    // Exibe a lista de restrições disponíveis
+    this->restricoesView.printRestricaoList(allRestricoes, "Restrição List:");
+
+    // Solicita ao usuário o nome da restrição a remover usando Utils::getString()
+    std::string nomeRestricao = Utils::getString("Enter the name of the restriction to remove:");
+
+    // Tenta obter a restrição pelo nome
+    Restricao* restricaoParaRemover = listaRestricoes.getByName(nomeRestricao);
+
+    if (restricaoParaRemover == nullptr) {
+        std::cout << "Restriction not found." << std::endl;
+    } else {
+        // Remove a restrição da lista
+        listaRestricoes.removeRestricoes(*restricaoParaRemover);
+        std::cout << "Restriction successfully removed." << std::endl;
+    }
+}
+void Controller::runSearchReceitaWithRestricao(){
+    // Obtém as listas atualizadas do modelo
+    restricoesList& listaRestricoes = this->model.getRestricoesList();
+    ReceitaList& listaReceitas = this->model.getReceitaList();
+
+    // Obtém todas as restrições disponíveis
+    list<Restricao> allRestricoes = listaRestricoes.getAll();
+
+    // Exibe a lista de restrições disponíveis
+    this->restricoesView.printRestricaoList(allRestricoes, "Restrição List:");
+
+    // Solicita ao usuário que selecione uma restrição
+    std::string nomeRestricao = Utils::getString("Enter the name of the restriction to search recipes:");
+
+    // Obtém a restrição pelo nome
+    Restricao* restricaoSelecionada = listaRestricoes.getByName(nomeRestricao);
+
+    if (restricaoSelecionada == nullptr) {
+        std::cout << "Restrição não encontrada." << std::endl;
+        return;
+    }
+
+    // Obtém todas as receitas disponíveis
+    list<Receita> allReceitas = listaReceitas.getAll();
+
+    // Lista para armazenar as receitas que satisfazem a restrição
+    list<Receita> receitasComRestricao;
+
+    // Itera sobre todas as receitas para verificar as que têm a restrição selecionada
+    for (auto& receita : allReceitas) {
+        if (receita.GetRestricao() == *restricaoSelecionada) {
+            receitasComRestricao.push_back(receita);
+        }
+    }
+
+    // Exibe as receitas que satisfazem a restrição
+    if (receitasComRestricao.empty()) {
+        std::cout << "Nenhuma receita encontrada com a restrição selecionada." << std::endl;
+    } else {
+        this->receitaView.printReceitaList(receitasComRestricao, "Receitas com a Restrição:");
+    }
+}
+
