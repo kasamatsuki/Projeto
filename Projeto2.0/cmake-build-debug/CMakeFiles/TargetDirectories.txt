@@ -1,3 +1,0 @@
-C:/Users/diogo/CLionProjects/Projeto2.0/cmake-build-debug/CMakeFiles/FoodFinder.dir
-C:/Users/diogo/CLionProjects/Projeto2.0/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/diogo/CLionProjects/Projeto2.0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
